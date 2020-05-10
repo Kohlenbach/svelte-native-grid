@@ -1,7 +1,2 @@
-import GridContainer from './GridContainer.svelte'
-import GridItem from './GridItem.svelte'
-
-export default {
-  GridContainer,
-  GridItem
-}
+export { default as GridContainer } from './GridContainer.svelte'
+export { default as GridItem } from './GridItem.svelte'
