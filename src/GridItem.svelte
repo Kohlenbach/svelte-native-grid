@@ -1,1 +1,0 @@
-<p>GridItem component</p>
