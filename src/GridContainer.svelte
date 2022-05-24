@@ -6,6 +6,7 @@
   export let justifyContent
   export let alignItems
   export let justifyItems
+  export let template
   export let minmax
   
   function normalizedStyle() {
@@ -14,6 +15,7 @@
     if (minmax) res += `grid-template-columns: repeat(auto-fit, minmax(${minmax.split(' ')[0]},${minmax.split(' ')[1]}));`
     else if (columns) res += `grid-template-columns: ${columns};`
     if (areas) res += `grid-template-areas: ${areas};`
+    if(template) res+=`grid-template: ${rows} / ${columns} ;`
     if (rows) res += `grid-template-rows: ${rows};`
     if (justifyContent) res += `justify-content: ${justifyContent};`
     if (justifyItems) res += `justify-items: ${justifyItems};`
